@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<section class="flex h-screen flex-col items-center bg-black md:flex-row">
+    <div class="hidden h-screen w-full bg-indigo-600 md:w-1/2 lg:block xl:w-2/3">
+      <img src="https://source.unsplash.com/random" alt="" class="h-full w-full object-cover" />
+    </div>
+  
+    <div class="flex h-screen w-full items-center justify-center bg-white px-6 md:mx-auto md:w-1/2 md:max-w-md lg:max-w-full lg:px-16 xl:w-1/3 xl:px-12">
+      <div class="h-100 w-full">
+        <h1 class="mt-12 text-xl font-bold leading-tight md:text-2xl">Register Now To Be a Part of Droid.</h1>
+  
+        <form class="mt-6" name="submit-to-google-sheet" id="sub" action="#" method='post'>
+        
+  
+         
+  
+          <div>
+            <label class="block text-gray-700">Email Address</label>
+            <input type="text" name="email" id="email" placeholder="Enter Email Address" class="mt-2 w-full rounded-lg border bg-gray-200 px-4 py-3 focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required />
+          </div>
+
+
+
+          <div>
+            <label class="block text-gray-700">Enter Your Password </label>
+            <input type="text" name="name" id="Password" placeholder="Enter University Roll Number" class="mt-2 w-full rounded-lg border bg-gray-200 px-4 py-3 focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required />
+          </div>
+          
+          
+  
+          <input onclick="auth()" value="Submit" type="submit" class="mt-6 block w-full rounded-lg bg-indigo-500 px-4 py-3 font-semibold text-white hover:bg-indigo-400 focus:bg-indigo-400"></input>
+
+         
+        </form> -->
+
+<!-- component -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+<div class="relative bg-cover bg-center bg-no-repeat" style="background-image: url(https://source.unsplash.com/random/900×700/?galaxy);">
+  <div class="absolute bg-gradient-to-b"></div>
+  <div class="mx-0 min-h-screen justify-center sm:flex sm:flex-row">
+    <div class="z-10 flex flex-col self-center p-10 sm:max-w-5xl xl:max-w-2xl">
+      <div class="hidden flex-col self-start text-white lg:flex">
+        <img src="" class="mb-3" />
+        <h1 class="mb-3 text-5xl font-bold">Hi Welcome Back!</h1>
+        <p class="pr-3">Contact us today to learn more about our events, workshops, and resources. Our dedicated team is always available to answer your questions and provide assistance with any Android-related inquiries. Join us and be a part of the Android revolution!</p>
+      </div>
+    </div>
+    <div class="z-10 flex justify-center self-center" data-aos="flip-right" data-aos-duration="2000">
+      <div class="w-100 mx-auto rounded-2xl bg-white p-12">
+        <div class="mb-4">
+          <h3 class="text-2xl font-semibold text-gray-800">login In</h3>
+          <p class="text-gray-500">Please login in to your account.</p>
+        </div>
+         <div class="space-y-5">
+            <div class="space-y-2">
+              <label class="text-sm font-medium tracking-wide text-gray-700" >Email</label>
+              <input class="w-full rounded-lg border border-gray-300 px-4 py-2 text-base focus:border-green-400 focus:outline-none" type="" placeholder="mail@gmail.com" id="email" />
+            </div>
+       
+          <div class="space-y-2">
+            <label class="mb-5 text-sm font-medium tracking-wide text-gray-700" > Password </label>
+            <input class="w-full content-center rounded-lg border border-gray-300 px-4 py-2 text-base focus:border-green-400 focus:outline-none" type="" placeholder="Enter your password" id="Password" />
+          </div>
+
+         
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 rounded border-gray-300 bg-blue-500 focus:ring-blue-400" />
+              <label for="remember_me" class="ml-2 block text-sm text-gray-800"> Remember me </label>
+            </div>
+            <!-- <div class="text-sm">
+              <a href="contact.html" class="text-green-400 hover:text-green-500"> New Member </a>
+            </div> -->
+          </div>
+          <div>
+            <input type="submit" class="flex w-full cursor-pointer justify-center rounded-full bg-green-400 p-3 font-semibold tracking-wide text-gray-100 shadow-lg transition duration-500 ease-in hover:bg-green-500" onclick="auth()"></input>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  <script>
+    function auth(){
+        var Password = document.getElementById("Password").value;
+    var email = document.getElementById("email").value;
+    if(Password == '8979' && email=='ss8523263@gmail.com'  )
+    {
+        window.location.assign("saurabh.html");
+        alert("Welcome Back Saurabh Sharma ");
+    }
+
+    if(Password == '3' && email=='pushkarverma284@gmail.com'  )
+    {
+        window.location.assign("events.html");
+        alert("login Sucessfully");
+    }
+
+
+    if(Password == '2115' && email=='golaakash0@gmail.com'  )
+    {
+        window.location.assign("golaji.html");
+        alert("Namskar Gola Ji !");
+    }
+
+
+    if(Password == '1262' && email=='prakhar2p@gmail.com'  )
+    {
+        window.location.assign("prakhar.html");
+        alert("Welcome back Prakhar Singh !");
+    }
+
+
+
+    
+    if(Password == '0420' && email=='avdesh.kumar_cs23@gla.ac.in'  )
+    {
+        window.location.assign("junglee.html");
+        alert("Junglee Beta");
+    }
+
+
+  
+
+
+    
+    
+    if(Password == '7359' && email=='prapatjain@gmail.com'  )
+    {
+        window.location.assign("prapt.html");
+        alert("Welcome Jain Sahab");
+    }
+
+
+
+
+    if(Password == '6437' && email=='piyush.gla2_bca23@gla.ac.in'  )
+    {
+        window.location.assign("piyush.html");
+        alert("Welcome Piyush Tiwari");
+    }
+
+
+
+
+    
+    if(Password == '2025' && email=='bittubhai779@gmail.com'  )
+    {
+        window.location.assign("rahul.html");
+        alert("Welcome President Sir");
+    }
+
+
+    
+    if(Password == '1557' && email=='qoolphoenix@gmail.com'  )
+    {
+        window.location.assign("pankaj.html");
+        alert("Welcome Rawat Ji !");
+    }
+
+
+    if(Password == '2635' && email=='utkarshchoudhary1573@gmail.com'  )
+    {
+        window.location.assign("uttkarsh.html");
+        alert("Welcome Uttkarsh Singh  !");
+    }
+
+
+    if(Password == '0482' && email=='pushkarverma284@gmail.com'  )
+    {
+        window.location.assign("pushkar.html");
+        alert("Welcome Pushkar Verma  !");
+    }
+
+    if(Password == '8232' && email=='priyanshukumar12345c@gmail.com'  )
+    {
+        window.location.assign("priyanshu.html");
+        alert("Welcome Priyanshu  !");
+    }
+
+    if(Password == '6178' && email=='naulakhaaditya4@gmail.com'  )
+    {
+        window.location.assign("aditya.html");
+        alert("Welcome Naukhla Ji  !");
+    }
+
+
+    if(Password == '2888' && email=='gagan.singh1_cs.aiml21@gla.ac.in'  )
+    {
+        window.location.assign("gagan.html");
+        alert("Welcome Gagan Kumar Singh  !");
+    }
+
+
+    if(Password == '0764' && email=='mayankmaurya8193@gmail.com'  )
+    {
+        window.location.assign("mayank.html");
+        alert("Welcome Mayank Maurya  !");
+    }
+
+
+    if(Password == '2384' && email=='vaishnav20041610@gmail.com'  )
+    {
+        window.location.assign("vaishnav.html");
+        alert("Welcome Vaishnav P Ramesh  !");
+    }
+
+
+    if(Password == '9255' && email=='avnish20singh05@gmail.com'  )
+    {
+        window.location.assign("avnish.html");
+        alert("Welcome Avnish Singh  !");
+    }
+
+    if(Password == '4020' && email=='mprerit425@gmail.com'  )
+    {
+        window.location.assign("prerit.html");
+        alert("Welcome Prerit Maheshwari  !");
+    }
+
+
+    if(Password == '0363' && email=='harshvardhangupta751@gmail.com'  )
+    {
+        window.location.assign("harshvardhan.html");
+        alert("Welcome Harshvardhan Gupta  !");
+    }
+
+    if(Password == '8282' && email=='muditgarg2005@gmail.com'  )
+    {
+        window.location.assign("mudit.html");
+        alert("Welcome Mudit Agrawal   !");
+    }
+
+
+
+    if(Password == '8305' && email=='parwanishreshtha203@gmail.com'  )
+    {
+        window.location.assign("shresths.html");
+        alert("Welcome Shreshtha parwani    !");
+    }
+
+    if(Password == '2049' && email=='divyanshsharmaofficial04@gmail.com'  )
+    {
+        window.location.assign("divyansh.html");
+        alert("Welcome divyansh Sharma    !");
+    }
+
+
+    if(Password == '9685' && email=='lalitrajput79026@gmail.com'  )
+    {
+        window.location.assign("lalit.html");
+        alert("Welcome Lalit Kumar     !");
+    }
+
+
+    if(Password == '7346' && email=='kumarvinit79130@gmail.com'  )
+    {
+        window.location.assign("vinit.html");
+        alert("Welcome VINIT KUMAR      !");
+    }
+
+
+
+    if(Password == '0690' && email=='rayensinghjii@gmail.com'  )
+    {
+        window.location.assign("rayen.html");
+        alert("Welcome Ryen Boss!");
+    }
+
+
+
+    if(Password == '3860' && email=='abhisheksharma41324@gmail.com'  )
+    {
+        window.location.assign("abhishek.html");
+        alert("Welcome Abhishek Sharma !");
+    }
+
+
+    if(Password == '5770' && email=='harsh2004great@gmail.com'  )
+    {
+        window.location.assign("harsh.html");
+        alert("Welcome Harsh Kushwaha!");
+    }
+
+
+
+
+    if(Password == '5214' && email=='sumit.bhardwaj_cs23@gla.ac.in'  )
+    {
+        window.location.assign("sumit.html");
+        alert("Welcome Sumit bhardwaj !");
+    }
+
+
+
+
+    
+    if(Password == '6359' && email=='polamuri.bhargav_cs.iiot21@gla.ac.in'  )
+    {
+        window.location.assign("bhargav.html");
+        alert("Welcome Bhargav !");
+    }
+
+       
+    if(Password == '6623' && email=='kuntalgaurav11@gmail.com'  )
+    {
+        window.location.assign("gaurav.html");
+        alert("Welcome Gaurav Kuntal !");
+    }
+
+
+    if(Password == '7816' && email=='filmanimation2005@gmail.com'  )
+    {
+        window.location.assign("kumar.html");
+        alert("Welcome Kumar Abhinav  !");
+    }
+
+
+
+    if(Password == '2310' && email=='amankuntal789@gmail.com'  )
+    {
+        window.location.assign("aman.html");
+        alert("Welcome Aman Singh Kuntal  !");
+    }
+
+
+
+    
+    if(Password == '5066' && email=='veshnavi.sharma_cs21@gla.ac.in'  )
+    {
+        window.location.assign("veshnavi.html");
+        alert("Welcome Veshnavi Sharma   !");
+    }
+
+
+    if(Password == '0943' && email=='om.makhija_cs.h23@gla.ac.in'  )
+    {
+        window.location.assign("om.html");
+        alert("Welcome Om Makhija !");
+    }
+
+
+
+
+
+
+
+    if(Password == '8209' && email=='shubhsachar36@gmail.com'  )
+    {
+        window.location.assign("subh.html");
+        alert("Welcome Shubh Sachar! ");
+    }
+
+
+
+
+    
+    if(Password == '9806' && email=='worshipagrawal7@gmail.com'  )
+    {
+        window.location.assign("worship.html");
+        alert("Welcome Worship agrawal! ");
+    }
+
+
+     
+    if(Password == '4570' && email=='riyagupta11042@gmail.com'  )
+    {
+        window.location.assign("riya.html");
+        alert("Welcome Riya Gupta! ");
+    }
+
+
+
+    if(Password == '9367' && email=='kunjbhasin16@gmail.com'  )
+    {
+        window.location.assign("kunj.html");
+        alert("Welcome Kunj Bhasin ! ");
+    }
+
+
+
+    if(Password == '1249' && email=='devanshbansal12082023@gmail.com'  )
+    {
+        window.location.assign("devansh.html");
+        alert("Welcome Devansh Bansal ! ");
+    }
+
+
+
+    
+    if(Password == '0021' && email=='shruti.jaitley_me21@gla.ac.in'  )
+    {
+        window.location.assign("shruti.html");
+        alert("Welcome Shruti Didi ! ");
+    }
+    
+
+
+    if(Password == '0022' && email=='Kaushalabhay15@gmail.com'  )
+    {
+        window.location.assign("abhay.html");
+        alert("Welcome Abhay kaushal ! ");
+    }
+
+
+
+    if(Password == '6139' && email=='sanchityadav@gmail.com'  )
+    {
+        window.location.assign("sanchit.html");
+        alert("Welcome Sanchit ! ");
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+    else{
+        // alert("Invalid Username or Password");
+        return;
+    }
+    }
+
+    // function auth(){
+    //     var Password = document.getElementById("Password").value;
+    // var email = document.getElementById("email").value;
+    // if(Password == '89' && email=='abc@gmail.com'){
+    //     window.location.assign("index1.html");
+    //     alert("login Ho gya Hai");
+    // }
+    // else{
+    //     alert("maa ki chut mere bete");
+    //     return;
+    // }
+    // }
+  
+  </script>
+
+</body>
+</html>

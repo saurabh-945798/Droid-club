@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com" ></script>
+    <title>Contact-Droid</title>
+</head>
+<body>
+    <!-- component -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+<section class="font-poppins flex h-screen flex-col">
+  <div class="relative bg-cover bg-center bg-no-repeat py-10" style="background-image:url('https://www.shutterstock.com/shutterstock/photos/2176711389/display_1500/stock-vector-letter-d-logo-vector-template-abstract-monogram-symbol-2176711389.jpg');">
+    <div class="absolute left-0 top-0 h-full w-full bg-gray-900 bg-opacity-80"></div>
+    <div class="relative z-10 mx-auto px-4 py-4 md:px-7 lg:py-10">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="my-7 text-4xl font-bold italic tracking-wide text-gray-100 lg:text-6xl dark:text-gray-300">At Droid Club, we're passionate about all things related to droids and <span class="text-teal-500 uppercase">robotics</h2>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <a href="#" class="mb-4 inline-flex h-14 w-full items-center justify-center rounded-md border border-transparent bg-blue-400 px-7 py-2 text-lg font-medium leading-7 text-gray-100 shadow-sm hover:bg-blue-100 hover:text-gray-700 md:mb-0 md:mr-4 md:w-auto dark:bg-teal-500 dark:hover:bg-teal-400 dark:hover:text-gray-100"> Sign Up Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="font-poppins flex h-screen items-center bg-black dark:bg-gray-800">
+    <div class="mx-auto max-w-7xl flex-1 justify-center">
+      <div class="mx-4 rounded-md bg-zinc-700 px-4 py-4 shadow md:p-10 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center">
+          <div class="mb-8 w-full px-4 lg:mb-0 lg:w-1/2">
+            <h2 class="mb-4 text-center text-3xl font-bold lg:text-left dark:text-gray-300">How To Reach <spn class="text-teal-600 uppercase italic">Us?</h2>
+            <p class="text-center text-base leading-loose text-white lg:max-w-lg lg:text-left">If you have any questions, comments, or suggestions, we'd love to hear from you! You can reach us using email.</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="flex items-center justify-center lg:justify-end">
+              <form action="">
+                <input class="mb-4 mr-2 w-full rounded-xl border bg-white px-4 py-2 text-center leading-loose lg:mb-0 lg:w-auto lg:text-left dark:border-gray-800 dark:bg-gray-800 dark:text-gray-400" type="email" placeholder="abc@gmail.com" required="" />
+                <button class="inline-block w-full rounded-l-xl rounded-t-xl bg-teal-500 px-6 py-2 font-bold leading-loose text-white transition duration-200 hover:bg-teal-700 lg:w-auto">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+  </div>
+</div>
+
+  <script>
+    let form = document.querySelector("form");
+    // The document.querySelector() method returns the first element that matches a specified CSS selector.
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // The preventDefault() method stops the form from submitting and prevents the page from refreshing.
+        document.querySelector("#sub").value = "Submiting..";
+        // Change the value of the submit button to "Submitting..." while the form is being submitted.
+        let data = new FormData(form);
+        // The FormData() method creates a new FormData object that contains the values of all the form fields.
+        fetch('https://script.google.com/macros/s/AKfycbyq2dcDilfnb-jBXguJWVCkoUVTWxGg_BtS8mhasuJWfyBZ8u9bolHVFih4jpkZvQuOwg/exec', {
+                method: "POST",
+                body: data
+            })
+            // The fetch() method is used to make a request to the server and retrieve data.
+            // This is an example API endpoint. Replace it with the actual URL for the API endpoint you want to use.
+            .then(res => res.text())
+            // The .then() method is used to handle the response from the server.
+            // The response is converted to text using the res.text() method.
+            .then(data => {
+                window.location.assign("portal.html");
+  
+             alert("Thank you For Contacting us !! We will contact you Soon. DROID COMMUNITY");
+  
+             
+              
+                // document.querySelector("#Thankyou for Contating us ...").innerHTML = data;
+                // The innerHTML property sets or returns the HTML content of an element.
+                // Here, we are setting the content of the <h1> element to the response from the server.
+                document.querySelector("#sub").value = "Submit"
+                
+                // Change the value of the submit button back to "Submit" after the form has been submitted.
+            });
+    })
+  </script>
+
+
+
+
+
+
+  
+</body>
+</html>

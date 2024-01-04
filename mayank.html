@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-[#f1f5fb] xl:h-screen dark:bg-gray-800">
+        <div class="body-content" x-data="{ open: true }">
+          <div class="navbar-menu relative lg:block">
+            <nav x-bind:class="! open ? 'w-0' : 'w-[280px]'" class="fixed bottom-0 left-0 top-0 z-0 mt-16 flex w-[280px] flex-col overflow-hidden border-r border-gray-200 bg-gray-50 transition-all lg:mt-0 lg:border-none dark:border-gray-800 dark:bg-gray-900" id="sidenav">
+              <div class="mb-4 flex w-full items-center border-b border-gray-200 px-4 pb-4 pt-4 dark:border-gray-700">
+                <a href="#">
+                  <div class="ml-2 flex items-center">
+                    <h2 class="ml-3 whitespace-nowrap  font-bold text-white text-3xl ">Droid</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-wrap items-center px-4">
+                
+                <div class="px-2">
+                  <span class=" text-xl dark:text-white">Welcome,</span>
+                  <h2 class="font-medium text-3xl italic dark:text-gray-300">Mayank Maurya</h2>
+                </div>
+              </div>
+              <div class="mt-4 overflow-y-auto overflow-x-hidden pb-6">
+                <ul class="mb-8 text-sm">
+                  <li>
+                    <a href="about.html" class="group flex items-center px-6 py-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+                      <span class="mr-3 inline-block">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+  </svg>
+                      </span>
+                      <span class="text-white">HOME</span>
+                    </a>
+                  </li>
+                
+                  </li>
+                  <li>
+                    <a href="act.html" class="group flex items-center px-6 py-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+                      <span class="mr-3 inline-block">
+                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/>
+                        </svg>
+                      </span>
+                      <span class="text-white"> EVENTS </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="events.html" class="group flex items-center px-6 py-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+                      <span class="mr-3 inline-block">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1v14h16M4 10l3-4 4 4 5-5m0 0h-3.207M16 5v3.207"/>
+  </svg>
+                      </span>
+                      <span class="text-white"> ACTIVITIES </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html" class="group flex items-center px-6 py-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">
+                      <span class="mr-3 inline-block">
+                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
+    <path d="M7.324 9.917A2.479 2.479 0 0 1 7.99 7.7l.71-.71a2.484 2.484 0 0 1 2.222-.688 4.538 4.538 0 1 0-3.6 3.615h.002ZM7.99 18.3a2.5 2.5 0 0 1-.6-2.564A2.5 2.5 0 0 1 6 13.5v-1c.005-.544.19-1.072.526-1.5H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h7.687l-.697-.7ZM19.5 12h-1.12a4.441 4.441 0 0 0-.579-1.387l.8-.795a.5.5 0 0 0 0-.707l-.707-.707a.5.5 0 0 0-.707 0l-.795.8A4.443 4.443 0 0 0 15 8.62V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.12c-.492.113-.96.309-1.387.579l-.795-.795a.5.5 0 0 0-.707 0l-.707.707a.5.5 0 0 0 0 .707l.8.8c-.272.424-.47.891-.584 1.382H8.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1.12c.113.492.309.96.579 1.387l-.795.795a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0l.8-.8c.424.272.892.47 1.382.584v1.12a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1.12c.492-.113.96-.309 1.387-.579l.795.8a.5.5 0 0 0 .707 0l.707-.707a.5.5 0 0 0 0-.707l-.8-.795c.273-.427.47-.898.584-1.392h1.12a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5ZM14 15.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+  </svg>
+                      </span>
+                      <span class="uppercase text-white"> team </span>
+                    </a>
+                  </li>
+              
+               
+                 
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="content-wrapper mx-auto transition-all" id="dash" x-bind:class="! open ? 'lg:ml-0' : 'lg:ml-[280px]'">
+            <section class="sticky top-0 z-40 bg-white px-3 py-3 shadow lg:px-5 dark:bg-gray-900">
+              <nav class="relative">
+                <div class="flex items-center justify-between">
+                  <div class="mr-auto items-center lg:flex">
+                    <button x-on:click="open = ! open" class="rounded bg-blue-100 px-2 py-3 text-blue-500 dark:bg-gray-700">
+                      <svg width="18" height="10" viewBox="0 0 18 10" fill="none" class="dark:text-gray-400" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.50002 1.66667H16.5C16.721 1.66667 16.933 1.57887 17.0893 1.42259C17.2456 1.26631 17.3334 1.05435 17.3334 0.833333C17.3334 0.61232 17.2456 0.400358 17.0893 0.244078C16.933 0.0877975 16.721 0 16.5 0H1.50002C1.27901 0 1.06704 0.0877975 0.910765 0.244078C0.754484 0.400358 0.666687 0.61232 0.666687 0.833333C0.666687 1.05435 0.754484 1.26631 0.910765 1.42259C1.06704 1.57887 1.27901 1.66667 1.50002 1.66667V1.66667ZM16.5 8.33333H1.50002C1.27901 8.33333 1.06704 8.42113 0.910765 8.57741C0.754484 8.73369 0.666687 8.94565 0.666687 9.16667C0.666687 9.38768 0.754484 9.59964 0.910765 9.75592C1.06704 9.9122 1.27901 10 1.50002 10H16.5C16.721 10 16.933 9.9122 17.0893 9.75592C17.2456 9.59964 17.3334 9.38768 17.3334 9.16667C17.3334 8.94565 17.2456 8.73369 17.0893 8.57741C16.933 8.42113 16.721 8.33333 16.5 8.33333ZM16.5 4.16667H1.50002C1.27901 4.16667 1.06704 4.25446 0.910765 4.41074C0.754484 4.56702 0.666687 4.77899 0.666687 5C0.666687 5.22101 0.754484 5.43298 0.910765 5.58926C1.06704 5.74554 1.27901 5.83333 1.50002 5.83333H16.5C16.721 5.83333 16.933 5.74554 17.0893 5.58926C17.2456 5.43298 17.3334 5.22101 17.3334 5C17.3334 4.77899 17.2456 4.56702 17.0893 4.41074C16.933 4.25446 16.721 4.16667 16.5 4.16667Z" fill="currentColor"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center">
+                   
+                    
+
+                    <div class="relative text-left lg:inline-block" x-data="{ open: false }">
+                      <div class="lg:block" @click="open = ! open">
+                        <button class="flex items-center">
+                          <div class="mr-3 hidden text-right md:block">
+                            <p class="text-sm font-bold text-black dark:text-gray-400">Mr. Mayank Maurya</p>
+                          </div>
+                          <div class="mr-2">
+                            <img src="img/mayank.jpeg" class="h-10 w-10 rounded-full object-cover object-right" alt="person" />
+                          </div>
+                          <span>
+                            <svg class="text-gray-400" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9.08335 0.666657C8.75002 0.333323 8.25002 0.333323 7.91669 0.666657L5.00002 3.58332L2.08335 0.666657C1.75002 0.333323 1.25002 0.333323 0.916687 0.666657C0.583354 0.99999 0.583354 1.49999 0.916687 1.83332L4.41669 5.33332C4.58335 5.49999 4.75002 5.58332 5.00002 5.58332C5.25002 5.58332 5.41669 5.49999 5.58335 5.33332L9.08335 1.83332C9.41669 1.49999 9.41669 0.99999 9.08335 0.666657Z" fill="currentColor"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                      <div x-show="open" id="dropdown_profile" class="absolute right-0 mt-3 w-48 origin-top-right rounded bg-white shadow dark:bg-gray-900">
+                        <div class="py-1">                     
+                          <a href="index.html" class="flex px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                              <polyline points="16 17 21 12 16 7"></polyline>
+                              <line x1="21" y1="12" x2="9" y2="12"></line>
+                            </svg>
+                            Logout
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </section>
+            <section class="px-6 py-6">
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+               
+                <div class="flex items-center justify-center bg-gray-50 p-4 shadow dark:bg-gray-900 cursor-pointer hover:scale-95 duration-1000">
+                  <div>
+                    <span class="text-gray-700 dark:text-gray-400">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
+                            <path d="M14.5 0A3.987 3.987 0 0 0 11 2.1a4.977 4.977 0 0 1 3.9 5.858A3.989 3.989 0 0 0 14.5 0ZM9 13h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z"/>
+                            <path d="M5 19h10v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2ZM5 7a5.008 5.008 0 0 1 4-4.9 3.988 3.988 0 1 0-3.9 5.859A4.974 4.974 0 0 1 5 7Zm5 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm5-1h-.424a5.016 5.016 0 0 1-1.942 2.232A6.007 6.007 0 0 1 17 17h2a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5ZM5.424 9H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h2a6.007 6.007 0 0 1 4.366-5.768A5.016 5.016 0 0 1 5.424 9Z"/>
+                          </svg>
+                    </span>
+                    <h2 class="mb-2 mt-2 text-2xl font-bold text-white">0</h2>
+                    <p class="text-white cursor-pointer hover:underline text-2xl">Metting Attend</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center bg-gray-50 p-4 shadow dark:bg-gray-900 cursor-pointer hover:scale-95 duration-1000">
+                  <div>
+                    <span class="text-gray-700 dark:text-gray-400">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z"/>
+                          </svg>
+                    </span>
+                    <h2 class="mb-2 mt-2 text-2xl font-bold text-white">0</h2>
+                    <p class="text-white cursor-pointer  text-2xl hover:underline">Events Attend</p>
+                  </div> 
+                </div>
+                <div class="flex items-center justify-center bg-gray-50 p-4 shadow dark:bg-gray-900 cursor-pointer hover:scale-95 duration-1000">
+                  <div>
+                    <span class="text-gray-700 dark:text-gray-400">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                    </span>
+                    <h2 class="mb-2 mt-2 text-2xl font-bold text-white">0</h2>
+                    <p class="text-white cursor-pointer  text-2xl hover:underline">Droid Points</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="px-6 pb-6">
+              <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
+                <div class="card mb-2 rounded bg-white p-6 shadow dark:bg-gray-900">
+                  <h2 class="mb-6 text-2xl font-semibold dark:text-white cursor-pointer hover:underline">Droid Progress</h2>
+                  <div class="mb-1 text-base font-medium dark:text-gray-400">100% Mettings</div>
+                  <div class="mb-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div class="h-2.5 rounded-full bg-gray-600 dark:bg-green-500" style="width: 100%"></div>
+                  </div>
+                  <div class="mb-1 text-base font-medium dark:text-gray-400">100% Events</div>
+                  <div class="mb-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div class="h-2.5 rounded-full bg-green-600 dark:bg-green-500" style="width: 100%"></div>
+                  </div>
+                  <div class="mb-1 text-base font-medium dark:text-gray-400">100% Impressions</div>
+                  <div class="mb-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div class="h-2.5 rounded-full bg-blue-600 dark:bg-green-500" style="width: 100%"></div>
+                  </div>
+                  <div class="mb-1 text-base font-medium dark:text-gray-400">100% OVERALL </div>
+                  <div class="mb-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div class="h-2.5 rounded-full bg-red-600 dark:bg-green-500" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="card mb-2 rounded bg-white p-6 shadow dark:bg-gray-900">
+                  <h2 class="mb-6 text-3xl font-semibold dark:text-white cursor-pointer hover:underline">New Updates</h2>
+               
+
+                  <div class="mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-4 h-6 w-6 text-gray-500 dark:text-gray-400" viewBox="0 0 16 16">
+                      <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"></path>
+                      <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"></path>
+                    </svg>
+                    <div>
+                      <p class="font-semibold dark:text-white uppercase cursor-pointer hover:underline">DROID Dicussion Metting </p>
+                      <p class="text-sm dark:text-white">05|01|2024 : Timming : 12:00pm</p>
+                    </div>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-4 h-6 w-6 text-gray-500 dark:text-gray-400" viewBox="0 0 16 16">
+                      <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"></path>
+                      <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"></path>
+                    </svg>
+                    <div>
+                      <p class="font-semibold dark:text-white cursor-pointer hover:underline">Tech-X , GLA UNIVERSITY </p>
+                      <p class="text-sm dark:text-white">COMMING SOON : Feb 2024</p>
+                    </div>
+                  </div>
+                
+                 
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      
+</body>
+</html>
